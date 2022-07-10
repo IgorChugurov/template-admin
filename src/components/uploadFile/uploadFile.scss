@@ -1,0 +1,87 @@
+.uploadFile {
+  margin-bottom: 10px;
+  .fileSelectForm {
+    form {
+      display: flex;
+      gap: 15px;
+      flex-direction: row;
+
+      .formInput {
+        display: flex;
+        gap: 15px;
+      }
+    }
+    @media (max-width: 760px) {
+      form {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        .formInput {
+          display: flex;
+          gap: 15px;
+        }
+      }
+    }
+  }
+
+  .chosenFile {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    .icon {
+      cursor: pointer;
+      color: red;
+      //background-color: rgba(0, 100, 0, 0.575);
+    }
+  }
+  .destinationList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .destiontionAndGroupList {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    span {
+      margin-left: 5px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  .destiontionEndList {
+    margin-top: 20px;
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    .erroricon {
+      color: red;
+    }
+    .okicon {
+      color: green;
+    }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .rotateIcon {
+    animation: spin 4s linear infinite;
+  }
+
+  .bottom {
+    margin-top: 20px;
+    overflow-x: auto;
+    .list-group-item {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

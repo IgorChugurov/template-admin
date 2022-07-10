@@ -1,0 +1,71 @@
+.users {
+  display: flex;
+
+  .usersContainer {
+    flex: 6;
+
+    .listContainer {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+      margin: 20px;
+      .top {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .listTitle {
+          font-weight: 500;
+          color: gray;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .datatable {
+    .datatableTitle {
+      width: 100%;
+      font-size: 24px;
+      color: gray;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .cellWithName {
+      display: flex;
+      align-items: center;
+    }
+
+    .cellAction {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      cursor: pointer;
+
+      .icon {
+        cursor: pointer;
+      }
+      .deleteIcon {
+        color: crimson;
+      }
+      .okicon {
+        color: green;
+        font-size: 32px;
+      }
+    }
+  }
+  .modalButton {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  #modal-modal-title {
+    text-align: center;
+  }
+}
+#modal-modal-description {
+  padding-left: 20px;
+  padding-right: 20px;
+}

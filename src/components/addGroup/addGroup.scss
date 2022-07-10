@@ -1,0 +1,32 @@
+.addGroup {
+  width: 100%;
+  margin-bottom: 20px;
+  .inputGroup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .inputGroupForButton {
+    display: flex;
+  }
+  @media (max-width: 760px) {
+    .inputGroup {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .inputGroupForButton {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+}
+@media (max-width: 760px) {
+  .addGroup {
+    margin-bottom: 0 !important;
+  }
+}

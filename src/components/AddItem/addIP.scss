@@ -1,0 +1,39 @@
+.addIP {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  .inputGroup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .addIPError {
+    font-size: 16px;
+    color: red;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+  .inputGroupForButton {
+    display: flex;
+  }
+  @media (max-width: 760px) {
+    .inputGroup {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .inputGroupForButton {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+}
+@media (max-width: 760px) {
+  .addIP {
+    margin-bottom: 0 !important;
+  }
+}
